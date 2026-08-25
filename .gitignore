@@ -1,0 +1,59 @@
+# =========================
+# Build 
+# =========================
+build/
+out/
+bin/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+Makefile
+*.ninja
+
+# =========================
+# C++ Compiled Binaries
+# =========================
+*.exe
+*.dll
+*.so
+*.o
+*.obj
+*.lib
+*.a
+*.pdb
+*.ilk
+
+# =========================
+# Assets & Caches
+# =========================
+*.spv
+*.pkf
+*.reapeaks
+*.log
+
+# =========================
+# IDEs & Editors
+# =========================
+.vs/
+*.sln.docstates
+*.user
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+*.user.*
+
+# =========================
+# OS & Environment
+# =========================
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux (AlmaLinux等)
+*~
+.fuse_hidden*
+.directory
