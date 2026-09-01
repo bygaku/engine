@@ -1,4 +1,4 @@
-giname: Notify Discord
+name: Notify Discord
 
 on:
   push:
