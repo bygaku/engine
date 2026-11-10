@@ -7,8 +7,9 @@ jobs:
   notify:
     runs-on: ubuntu-latest
 
+    # Discordに通知を送る
     steps:
-      - name: ディスコードの通知を送信
+      - name: Send to Discord
         run: |
           curl -H "Content-Type: application/json" \
           -X POST \
