@@ -81,6 +81,8 @@ Makefile
 # *.ipr
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
+.idea/indexLayout.xml
+.idea/projectSettingsUpdater.xml
 # File-based project format
 *.iws
 # IntelliJ
@@ -116,8 +118,3 @@ http-client.private.env.json
 # Windows
 Thumbs.db
 Desktop.ini
-
-# Linux (AlmaLinux等)
-*~
-.fuse_hidden*
-.directory
