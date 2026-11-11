@@ -3,6 +3,7 @@
     <RondoRoot>$(MSBuildThisFileDirectory)</RondoRoot>
     <DxLibDir>$(RondoRoot)third_party\DxLib\</DxLibDir>
     <ExternalIncludePath>$(DxLibDir);$(ExternalIncludePath)</ExternalIncludePath>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
 
   <ItemDefinitionGroup>
@@ -12,7 +13,10 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>$(RondoRoot);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(RondoRoot)engine;$(RondoRoot);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(DxLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
