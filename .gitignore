@@ -72,3 +72,5 @@ Desktop.ini
 # Third party
 # =========================
 third_party/*
+!third_party/DxLib/
+!third_party/DxLib/**
