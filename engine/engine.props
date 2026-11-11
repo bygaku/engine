@@ -1,0 +1,6 @@
+<Project>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)**\*.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)**\*.cpp" Exclude="$(MSBuildThisFileDirectory)**\*_test.cpp" />
+  </ItemGroup>
+</Project>
